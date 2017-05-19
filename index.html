@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/form.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="options-box">
+        <h1>Your Map</h1>
+        <div>
+          <input class="button button-1"  type="button" data-bind="click:showListings" value="Show Listings">
+          <input class="button button2"  type="button" data-bind="click:hideListings" value="Hide Listings">
+          <hr>
+          <span class="text"> Draw a shape to search within it for homes!</span>
+          <input id="toggle-drawing"  type="button" value="Drawing Tools">
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="lib/knockout-3.4.2.js"></script>
+ <script src="js/app.js"></script>
+
+    <script async defer src=
+        "https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyD2i-pUOKvH4X-cCVR9m90nKyY1hmCjfeo&v=3&callback=initMap">
+    </script>
+
+
+  </body>
+</html>
